@@ -8,7 +8,7 @@ Run `/docker-check` first. Do not proceed if any check fails.
 
 ## What This Command Does
 
-1. Fetch the next **Todo** ticket from Linear (project: `reviews-analytics-app`, team: Brain Spark)
+1. Fetch the next **Todo** ticket from Linear (project: `Reviewly`, team: Brain Spark)
 2. Read the full ticket — title, description, and acceptance criteria
 3. **Validate the ticket is unambiguous** — stop and ask if anything is unclear
 4. Mark ticket **In Progress**
