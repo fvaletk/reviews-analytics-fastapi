@@ -5,9 +5,6 @@ description: >
   be coded — pass the full ticket title, description, and acceptance criteria.
 tools: Read, Write, Edit, Bash, Glob, Grep
 model: sonnet
-skills:
-  - fastapi-conventions
-  - scrape-contract
 color: blue
 ---
 
@@ -26,8 +23,8 @@ Implement exactly what the ticket's acceptance criteria describe. Nothing more, 
 
 ## Implementation Rules
 
-- Follow `fastapi-conventions` skill exactly — routers in `app/routers/`, services in `app/services/`, Pydantic models in `app/models/`
-- Follow `scrape-contract` skill for anything touching `/scrape` or the response shape
+- Follow `.claude/rules/fastapi.md` exactly — routers in `app/routers/`, services in `app/services/`, Pydantic models in `app/models/`
+- Follow `.claude/rules/scrape-contract.md` for anything touching `/scrape` or the response shape
 - This service is stateless — never add database connections, file writes, or persistent state
 - Type hints on all function signatures
 - No `print()` in committed code — use Python `logging` if needed

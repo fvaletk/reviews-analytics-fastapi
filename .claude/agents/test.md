@@ -6,10 +6,6 @@ description: >
   the implement agent.
 tools: Read, Write, Edit, Bash, Glob, Grep
 model: sonnet
-skills:
-  - pytest-patterns
-  - fastapi-conventions
-  - scrape-contract
 color: green
 ---
 
@@ -48,7 +44,7 @@ Check if every file produced by the implement agent is a Python file in `app/`.
 
 ## Step 2 — Write the Tests
 
-Follow the `pytest-patterns` skill exactly:
+Follow `.claude/rules/pytest.md` exactly:
 
 - Use `TestClient` from FastAPI for endpoint tests
 - Always mock external HTTP calls — never make real network requests
