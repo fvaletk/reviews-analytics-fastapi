@@ -12,16 +12,8 @@ parallel, and returns JSON. No database, no state, no webhooks — and never add
 
 ```yaml
 vault_project: reviewly
-vault_path: ~/Projects/Capri/01-projects/reviewly
 ```
 
-Both repos map to this one project folder; the repo name doesn't match it.
-
-- **Run `/project-context` at the start of a session.** It reads the folder in order and
-  reports what's unfinished, the current status, and open findings.
-- **Read `analysis/current-understanding.md` before deciding anything about review
-  sampling or volume.** It records what's already settled and why.
-- **The vault can be stale; this repo is the truth.** Verify paths and line numbers in the code.
 - **Found an unrelated bug mid-task?** Run `/report-issue` (no arguments). It writes a finding
   to the vault without creating a ticket or touching code. Don't fix it in the current ticket.
 
